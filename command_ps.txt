@@ -1,0 +1,8 @@
+./cpolar http -redirect-https=true -region=top -subdomain=st 9988
+./cpolar http -redirect-https=true -region=top -subdomain=mt 3344
+
+##################################################################################
+# 电视遥控器 内部需要启动的各类脚本
+sudo python controller.py # 这个同时开cpolar上面的3344。
+node server.js # 这个同时开cpolar上面的9988命令行。
+
